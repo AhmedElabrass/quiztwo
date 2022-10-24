@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "cairo", "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+}
+header .content {
+  padding: 0px 100px;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .left {
+  width: 32%;
+  height: 25px;
+}
+header .left a {
+  font-size: 18px;
+  color: gray;
+}
+header .left input {
+  width: 300px;
+  font-size: 22px;
+  color: gray;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+header .left input:focus {
+  transform: scale(1.1);
+  font-size: 15px;
+}
+header .center {
+  width: 32%;
+  height: 25px;
+}
+header .center h1 {
+  width: 200px;
+  border: 2px solid black;
+  padding: 5px;
+  color: gray;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+}
+header .right {
+  width: 32%;
+  height: 25px;
+  text-align: right;
+}
+header .right a {
+  font-size: 25px;
+  color: gray;
+  margin-left: 15px;
+}
+header .right a:hover {
+  color: rgb(104, 103, 103);
+}
+header .bottom {
+  width: 100%;
+  height: 100px;
+}
+header .bottom ul {
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgba(128, 128, 128, 0.15);
+}
+header .bottom ul select {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
+  outline: none;
+}
+header .bottom ul select:hover {
+  color: rgba(138, 39, 231, 0.835);
+}
+header .bottom ul li:hover {
+  color: rgba(138, 39, 231, 0.835);
+}
+header .bottom ul li {
+  margin-left: 18px;
+  font-size: 20px;
+  color: rgb(128, 127, 127);
+  font-weight: bold;
+}
+.back-photo {
+  width: 100%;
+
+  height: 80vh;
+}
+.back-photo .photo1 {
+  position: relative;
+}
+.back-photo .hero1 {
+  width: 100%;
+}
+.back-photo .paragraph {
+  width: 600px;
+  height: 50vh;
+  position: absolute;
+  top: 35%;
+  right: 120px;
+}
+.back-photo .paragraph h1 {
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+.back-photo .paragraph p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+  color: lightslategrey;
+}
+.back-photo .paragraph button {
+  width: 180px;
+  height: 60px;
+  background-color: blueviolet;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.back-photo .paragraph button:hover {
+  transform: translateX(5px);
+  background-color: rgb(118, 31, 200);
+  box-shadow: 1px 1px 10px black;
+}
+.serv {
+  width: 100%;
+  height: 50vh;
+}
+.serv .contain {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.15);
+}
+.serv .contain .sec1 {
+  width: 500px;
+  display: flex;
+}
+.serv .sec1 div {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.serv .sec1 a {
+  font-size: 50px;
+  padding-right: 10px;
+  color: blueviolet;
+}
+.serv .sec1 span {
+  font-size: 23px;
+}
+.serv .sec1 p {
+  color: lightslategrey;
+  padding-top: 15px;
+  line-height: 2;
+}
+.picture {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.picture .pic1 {
+  position: relative;
+}
+.picture .pic1 .des {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.picture .pic1 .des p {
+  color: white;
+  font-weight: bold;
+}
+.picture .pic1 .des h2 {
+  color: white;
+  font-size: 40px;
+}
+.picture .pic1 img {
+  width: 500px;
+  height: 600px;
+  /* opacity: 0.9; */
+  background-image: linear-gradient(to left, blue 40%, red);
+  transition: all 0.5s ease;
+}
+.picture .pic1 img:hover {
+  transform: scale(1.1);
+}
+.product {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #edf2f46c;
+  padding: 100px;
+}
+.product .title {
+  width: 100%;
+}
+.product .border {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.product .border p {
+  width: 60px;
+  border-bottom: 3px solid blueviolet;
+}
+.product .tit-text {
+  text-align: center;
+  font-size: 39px;
+  font-weight: 500;
+}
+.product .content {
+  padding: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.product .content .pro1 {
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  text-align: center;
+}
+.product .content .pro1 .pho1,
+.pho2,
+.pho3 {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 25px;
+}
+.product .content .pro1 .name {
+  color: blueviolet;
+  margin-bottom: 7px;
+  font-size: 22px;
+}
+.product .content .pro1 .des {
+  font-size: 20px;
+  margin-bottom: 7px;
+  color: lightslategray;
+}
+.product .content .pro1 .price {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sales {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.15);
+}
+.sales .title {
+  width: 100%;
+}
+.sales .border {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sales .border p {
+  width: 60px;
+  border-bottom: 3px solid blueviolet;
+}
+.sales .tit-text {
+  text-align: center;
+  font-size: 39px;
+  font-weight: 500;
+}
+.sales .content {
+  padding: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sales .content .right {
+  width: 600px;
+  text-align: center;
+}
+.sales .content .right h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: blueviolet;
+}
+.sales .content .right .sale-p1 {
+  font-size: 25px;
+  color: lightslategray;
+  margin-bottom: 20px;
+}
+.sales .content .right .sale-p1 .span1 {
+  color: blueviolet;
+}
+.sales .content .right .sale-p1 .span2 {
+  padding: 0px 5px;
+  font-size: 30px;
+  text-align: center;
+}
+.sales .content .right .sale-p2 {
+  font-size: 20px;
+  line-height: 2;
+  color: lightslategray;
+  margin-bottom: 10px;
+}
+.sales .content .right button {
+  width: 180px;
+  height: 60px;
+  background-color: blueviolet;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.sales .content .right button:hover {
+  transform: translateX(5px);
+  background-color: rgb(118, 31, 200);
+  box-shadow: 1px 1px 10px black;
+}
+.contact {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+.navigation h1 {
+  margin-bottom: 20px;
+}
+.navigation .content {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .content .nav1 p a {
+  color: lightslategray;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navigation .content .nav1 p {
+  margin-bottom: 20px;
+}
+.promo {
+  width: 400px;
+}
+.promo h1 {
+  margin-bottom: 20px;
+}
+.promo img {
+  width: 400px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+.promo h3 {
+  color: blueviolet;
+  font-weight: 600;
+  font-size: 21px;
+}
+.promo p {
+  font-size: 18px;
+  color: lightslategray;
+}
+.communicat {
+  width: 500px;
+}
+.communicat h1 {
+  margin-bottom: 20px;
+}
+.communicat .links {
+  margin-bottom: 20px;
+}
+.communicat a {
+  font-size: 25px;
+  color: blueviolet;
+}
+.communicat .email {
+  width: 400px;
+}
+.communicat .email h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.communicat .email div {
+  width: 300px;
+  height: 50px;
+  position: relative;
+}
+.communicat .email div input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgba(119, 136, 153, 0.624);
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.communicat .email div button {
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: none;
+  right: 5px;
+  top: 5px;
+  font-size: 15px;
+  font-weight: 200;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  height: 20vh;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  width: 100%;
+  font-size: 20px;
+  color: lightslategray;
+  display: flex;
+  justify-content: center;
+}
+footer p a {
+  color: blueviolet;
+  padding: 0px 5px;
+}
+footer p i {
+  padding: 0px 5px;
+}
+/* About Start*/
+
+
+/* About End */
